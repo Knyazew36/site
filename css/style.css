@@ -101,6 +101,7 @@ body {
   max-width: 996px;
   margin: 0px auto;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 .header__wrapper {
@@ -156,7 +157,7 @@ input.header-input {
   display: block;
   background-color: black;
   height: 2px;
-  width: 24px;
+  width: 29px;
   cursor: pointer;
   position: relative;
 }
@@ -171,10 +172,10 @@ input.header-input {
   transition: 0.4s;
 }
 .burger__line::before {
-  top: 7px;
+  top: 9px;
 }
 .burger__line::after {
-  top: -7px;
+  top: -9px;
 }
 
 .navigation__list {
@@ -191,6 +192,7 @@ input.header-input {
 }
 
 .navigation__links {
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -394,6 +396,7 @@ input.header-input {
   -o-object-position: 10px 30px;
      object-position: 10px 30px;
   max-height: 500px;
+  margin-bottom: 30px;
 }
 .section__4__column .footer {
   display: block;
@@ -436,7 +439,6 @@ input.header-input {
 .btn {
   display: block;
   float: right;
-  padding: 31px 0;
 }
 
 #input__blog {
@@ -610,13 +612,16 @@ input.header-input {
   }
 
   .navigation__list li {
-    padding: 20px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   }
   .navigation__list li a {
+    display: block;
+    padding: 20px;
+    height: 100%;
+    margin-left: 0;
     font-size: 30px;
   }
   .navigation__list li:hover {
@@ -687,6 +692,10 @@ input.header-input {
   .section__1__column__right {
     margin-bottom: 20px;
   }
+  .section__1__column__right img {
+    -webkit-transform: translateX(14px);
+            transform: translateX(14px);
+  }
 
   .section__1__img {
     display: block;
@@ -696,7 +705,7 @@ input.header-input {
   }
 
   .section__1__tittle {
-    margin-top: 0;
+    margin-top: 16px;
     min-width: 100%;
   }
 
@@ -735,9 +744,10 @@ input.header-input {
   }
 
   .section__1__tittle {
+    margin-top: 16px;
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .section__1-coffee {
@@ -785,7 +795,7 @@ input.header-input {
     padding: 0;
     position: absolute;
     bottom: 2px;
-    right: 0;
+    right: 0px;
   }
 
   #section__4__column-left {
@@ -829,5 +839,9 @@ input.header-input {
   .section__blog__text {
     margin-top: 10px;
     padding-bottom: 45px;
+  }
+
+  .text__links {
+    font-size: 14px;
   }
 }
