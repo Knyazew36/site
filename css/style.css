@@ -366,19 +366,20 @@ input.header-input {
 }
 
 .section__4 {
-  min-height: 500px;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
 }
 
 .section__4__body {
   display: block;
   position: relative;
-  background: #F7FAFC;
 }
 
 .section__4__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #F7FAFC;
 }
 
 #section__4__column-left {
@@ -390,13 +391,11 @@ input.header-input {
   display: block;
 }
 .section__4__column img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 10px 30px;
-     object-position: 10px 30px;
   max-height: 500px;
-  margin-bottom: 30px;
 }
 .section__4__column .footer {
   display: block;
@@ -439,6 +438,7 @@ input.header-input {
 .btn {
   display: block;
   float: right;
+  margin: 31px 0;
 }
 
 #input__blog {
@@ -612,10 +612,10 @@ input.header-input {
   }
 
   .navigation__list li {
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .navigation__list li a {
     display: block;
@@ -623,6 +623,10 @@ input.header-input {
     height: 100%;
     margin-left: 0;
     font-size: 30px;
+  }
+  .navigation__list li:nth-child(1) {
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 4px 0px rgba(34, 60, 80, 0.2);
   }
   .navigation__list li:hover {
     background-color: #FFC81A;
@@ -776,6 +780,10 @@ input.header-input {
     margin-bottom: 10px;
   }
 
+  .section__4 {
+    max-height: 100%;
+  }
+
   .section__4 img {
     margin-bottom: 17px;
   }
@@ -791,15 +799,8 @@ input.header-input {
             flex-direction: column-reverse;
   }
 
-  .btn {
-    padding: 0;
-    position: absolute;
-    bottom: 2px;
-    right: 0px;
-  }
-
   #section__4__column-left {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
 
   .section__4__tittle {
@@ -834,6 +835,11 @@ input.header-input {
 
   .section__blog__title {
     padding-bottom: 10px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .section__blog__text {
